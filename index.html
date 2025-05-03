@@ -1,0 +1,2343 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>bd news-paper</title>
+  <link rel="stylesheet" href="./assets//css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <!-- top header -->
+    <div class="container d-lg-flex d-none justify-content-between align-items-center py-2">
+      <div class="">
+        <p>৩০ এপ্রিল ২০২৫, ১৭ বৈশাখ ১৪৩২</p>
+      </div>
+      <div class="d-flex align-items-center gap-3 text-black">
+        <a class="nav-link" href="">মতামত</a>
+        <a class="nav-link" href="">আর্টস</a>
+        <a class="nav-link" href="">সবিশেষ</a>
+        <a class="nav-link" href="">ছবির গল্প</a>
+        <a class="nav-link" href="">টিউব</a>
+      </div>
+  
+      <div class="d-flex gap-2 align-items-center">
+        <div class="social_div bg-primary">
+          <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="social_div bg-danger">
+          <a href="#" class="text-white">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="social_div bg-info">
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="social_div bg-danger">
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="social_div bg-success">
+          <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- App Store buttons -->
+        <div class="d-none d-md-block">
+          <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              alt="App Store" height="40">
+          </a>
+          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play" height="40">
+          </a>
+        </div>
+        <div class="d-md-none d-block">
+          <button class="btn p-0" type="button">
+            <i class="fas fa-search fa-lg"></i>
+          </button>
+        </div>
+  
+        <!-- Center logo -->
+        <div>
+          <h2 class="m-0 " style="color: #d33;">bdnews24.com</h2>
+        </div>
+  
+        <!-- English button -->
+        <div>
+          <button class="btn btn-dark">English</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- menu bar -->
+    <div class="bg-white shadow-lg py-2" id="mainMenu">
+      <div class="container">
+        <div class="position-relative">
+          <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center gap-2">
+              <button class="navbar-toggler block d-md-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu">
+                <i class="fas fa-bars fa-lg"></i>
+              </button>
+              <button class="btn p-0 d-none d-md-block" id="dropdownBtn" type="button">
+                <i class="fas fa-bars fa-lg"></i>
+              </button>
+              <button class="btn p-0" type="button">
+                <i class="fas fa-home fa-lg"></i>
+              </button>
+              <button class="btn p-0 d-none d-md-block" type="button">
+                <i class="fas fa-search fa-lg"></i>
+              </button>
+            </div>
+            
+            <div class="d-flex align-items-center gap-4 hide-scrollbar">
+              <a class="nav-link text-danger d-inline-block" href="#">ফিরে দেখা ২০২৪</a>
+              <a class="nav-link d-inline-block" href="#">সমগ্র বাংলাদেশ</a>
+              <a class="nav-link d-inline-block" href="#">বিশ্ব</a>
+              <a class="nav-link d-inline-block" href="#">ক্রিকেট</a>
+              <a class="nav-link d-inline-block" href="#">খেলা</a>
+              <a class="nav-link d-inline-block" href="#">বাণিজ্য</a>
+              <a class="nav-link d-inline-block" href="#">হ্যালো</a>
+              <a class="nav-link d-inline-block" href="#">ট্রিটিজ</a>
+              <a class="nav-link d-inline-block" href="#">লাইফস্টাইল</a>
+              <a class="nav-link d-inline-block" href="#">টেক</a>
+              <a class="nav-link d-inline-block" href="#">সব খবর</a>
+            </div>
+          </div>
+          <div>
+            <!-- large device for dropdwon menu -->
+            <div id="dropdown" class="dropdown ">
+              <div class="container bg-white shadow-lg border-1">
+                <div class="row text-sm">
+                  <div class="col-12 col-md-4 col-lg-2 menu-column mb-4">
+                    <ul>
+                      <li>
+                        <h5>হোম</h5>
+                      </li>
+                      <li>
+                        <a href="">সমগ্র বাংলাদেশ</a>
+                      </li>
+                      <li>
+                        <a href="">চট্টগ্রাম</a>
+                      </li>
+                      <li>
+                        <a href="">বিশ্ব</a>
+                      </li>
+                      <li>
+                        <a href="">রাজনীতি</a>
+                      </li>
+                      <li>
+                        <a href="">ক্রীড়া</a>
+                      </li>
+                      <li>
+                        <a href="">প্রবাস</a>
+                      </li>
+                      <li>
+                        <a href="">বাংলাদেশ</a>
+                      </li>
+                      <li>
+                        <a href="">বিজ্ঞান</a>
+                      </li>
+                      <li>
+                        <a href="">পরিবেশ</a>
+                      </li>
+                      <li>
+                        <a href="">স্বাস্থ্য</a>
+                      </li>
+                      <li>
+                        <a href="">ক্যাম্পাস</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 menu-column mb-4">
+            
+                    <ul>
+                      <li>
+                        <h5>খেলা</h5>
+                      </li>
+                      <li>
+                        <a href="">ক্রিকেট</a>
+                      </li>
+                      <li>
+                        <a href="">খেলা</a>
+                      </li>
+                      <li>
+                        <a href="">চ্যাম্পিয়নস ট্রফি</a>
+                      </li>
+                      <li>
+                        <a href="">কাতার বিশ্বকাপ ২০২২</a>
+                      </li>
+                      <li>
+                        <a href="">টি-টোয়েন্টি বিশ্বকাপ</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 menu-column mb-4">
+                    <ul>
+                      <li>
+                        <h5>মতামত</h5>
+                      </li>
+                      <li>
+                        <a href="">মতামত</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 menu-column mb-4">
+                    <ul>
+                      <li>
+                        <h5>অর্থ-বাণিজ্য</h5>
+                      </li>
+                      <li>
+                        <a href="">অর্থ ও বাণিজ্য</a>
+                      </li>
+                      <li>
+                        <a href="">বাণিজ্য</a>
+                      </li>
+                      <li>
+                        <a href="">অর্থনীতি</a>
+                      </li>
+                      <li>
+                        <a href="">পুঁজিবাজার</a>
+                      </li>
+                      <li>
+                        <a href="">করপোরেট</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 menu-column mb-4">
+                    <ul>
+                      <li>
+                        <h5>মাল্টিমিডিয়া</h5>
+                      </li>
+                      <li>
+                        <a href="">ছবির</a>
+                      </li>
+                      <li>
+                        <a href="">ছবির গল্প</a>
+                      </li>
+                      <li>
+                        <a href="">টিউন</a>
+                      </li>
+                      <li>
+                        <a href="">ইন্সাইড আউট</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 mb-4">
+                    <ul>
+                      <li>
+                        <h5>আরও</h5>
+                      </li>
+                      <li>
+                        <a href="">বিশেষ</a>
+                      </li>
+                      <li>
+                        <a href="">প্রতিবেশী</a>
+                      </li>
+                      <li>
+                        <a href="">করোনাভাইরাস</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- Offcanvas for mobile -->
+    <div class="offcanvasMenu offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-danger">bdnews24.com</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="search-box mb-4">
+          <input type="text" class="form-control" placeholder="খুঁজুন ...">
+          <span class="search-icon">
+            <i class="fa fa-search"></i>
+          </span>
+        </div>
+        <ul class="navbar-nav">
+          <li>
+            <button class="btn w-100 d-flex align-items-center justify-content-between shadow-lg" data-bs-toggle="collapse"
+              data-bs-target="#homeSubmenu">
+              <span>হোম</span> <span>+</span>
+            </button>
+            <div class="collapse" id="homeSubmenu">
+              <ul class="list-unstyled ps-3">
+                <li><a class="nav-link" href="#">সমগ্র বাংলাদেশ</a></li>
+                <li><a class="nav-link" href="#">চট্টগ্রাম</a></li>
+                <li><a class="nav-link" href="#">বিশ্ব</a></li>
+                <li><a href="" class="nav-link">রাজনীতি</a></li>
+                <li><a href="" class="nav-link">ক্রীড়া</a></li>
+                <li><a href="" class="nav-link">প্রবাস</a></li>
+                <li><a href="" class="nav-link">বাংলাদেশ</a></li>
+                <li><a href="" class="nav-link">বিজ্ঞান</a></li>
+                <li><a href="" class="nav-link">পরিবেশ</a></li>
+                <li><a href="" class="nav-link">স্বাস্থ্য</a></li>
+                <li><a href="" class="nav-link">ক্যাম্পাস</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn w-100 d-flex align-items-center justify-content-between shadow-lg mt-2"
+              data-bs-toggle="collapse" data-bs-target="#sportsSubmenu">
+              <span>খেলা</span> <span>+</span>
+            </button>
+            <div class="collapse" id="sportsSubmenu">
+              <ul class="list-unstyled ps-3">
+                <li><a class="nav-link" href="#">ক্রিকেট</a></li>
+                <li><a class="nav-link" href="#">ফুটবল</a></li>
+                <li><a class="nav-link" href="#">চ্যাম্পিয়ন্স ট্রফি</a></li>
+                <li><a href="" class="nav-link">কাতার বিশ্বকাপ ২০২২</a></li>
+                <li><a href="" class="nav-link">টি-টোয়েন্টি বিশ্বকাপ</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn w-100 d-flex align-items-center justify-content-between shadow-lg mt-2" data-bs-toggle="collapse"
+              data-bs-target="#opinionSubmenu">
+              <span>মতামত</span> <span>+</span>
+            </button>
+            <div class="collapse" id="opinionSubmenu">
+              <ul class="list-unstyled ps-3">
+                <li><a class="nav-link" href="#">মতামত</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn w-100 d-flex align-items-center justify-content-between shadow-lg mt-2" data-bs-toggle="collapse"
+              data-bs-target="#binanceSubmenu">
+              <span>অর্থ-বাণিজ্য</span> <span>+</span>
+            </button>
+            <div class="collapse" id="binanceSubmenu">
+              <ul class="list-unstyled ps-3">
+                <li><a class="nav-link" href="#">অর্থ-বাণিজ্য</a></li>
+                <li><a href="" class="nav-link">বাণিজ্য</a></li>
+                <li><a href="" class="nav-link">অর্থনীতি</a></li>
+                <li><a href="" class="nav-link">পুঁজিবাজার</a></li>
+                <li><a href="" class="nav-link">করপোরেট</a></li>
+                <li><a href="" class="nav-link"></a></li>
+                <li><a href="" class="nav-link"></a></li>
+                <li><a href="" class="nav-link"></a></li>
+                <li><a href="" class="nav-link"></a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn w-100 d-flex align-items-center justify-content-between shadow-lg mt-2" data-bs-toggle="collapse"
+              data-bs-target="#multiMediaSubmenu">
+              <span>মাল্টিমিডিয়া</span> <span>+</span>
+            </button>
+            <div class="collapse" id="multiMediaSubmenu">
+              <ul class="list-unstyled ps-3">
+                <li><a class="nav-link" href="#">ছবির</a></li>
+                <li><a href="" class="nav-link">ছবির গল্প</a></li>
+                <li><a href="" class="nav-link">টিউন</a></li>
+                <li><a href="" class="nav-link">ইন্সাইড আউট</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn w-100 d-flex align-items-center justify-content-between shadow-lg mt-2" data-bs-toggle="collapse"
+              data-bs-target="#moreSubmenu">
+              <span>আরও</span> <span>+</span>
+            </button>
+            <div class="collapse" id="moreSubmenu">
+              <ul class="list-unstyled ps-3">
+                <li><a href="" class="nav-link">বিশেষ</a></li>
+                <li><a href="" class="nav-link">প্রতিবেশী</a></li>
+                <li><a href="" class="nav-link">করোনাভাইরাস</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- marque area -->
+    <div class="container">
+      <div class=" d-flex align-items-center gap-3  bg-color rounded text-white">
+        <div class="py-2 px-4 rounded text-white d-flex align-items-center">
+          <strong>সর্বশেষ</strong>
+        </div>
+        <div class="flex-grow-1 ">
+          <marquee behavior="scroll" direction="" class="d-flex align-items-center gap-4 marque_div">
+            <a class="nav-link d-inline-block" href="">তৃতীয় দিনেই চট্টগ্রাম টেস্টে ইনিংস ও ১০৬ রানের বিশাল জয়
+              বাংলাদেশের, সমতায় শেষ জিম্বাবুয়ে সিরিজ </a>
+            <a class="nav-link d-inline-block" href="">হাসিনার বিরুদ্ধে আরেক মামলা, এবার সাংবাদিক হত্যার অভিযোগ </a>
+            <a class="nav-link d-inline-block" href="">বিভেদের রাজনীতি আমাদের ঐতিহ্য নষ্ট করেছে: ফখরুল </a>
+            <a class="nav-link d-inline-block" href="">বিভেদের রাজনীতি আমাদের ঐতিহ্য নষ্ট করেছে: ফখরুল </a>
+            <a class="nav-link d-inline-block" href="">বিভেদের রাজনীতি আমাদের ঐতিহ্য নষ্ট করেছে: ফখরুল </a>
+          </marquee>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ----main content section ---- -->
+  <main>
+    <!-- section 1 start -->
+    <section class="section1 container py-5">
+      <div class="row">
+        <!-- Left Aside -->
+        <div class="col-12 col-md-3 order-2 order-md-1">
+          <a class="nav-link mb-5" href="">
+            <h4 class="hover_link">
+              রাখাইনে মানবিক সহায়তা পাঠাতে দুদেশেরই ‘অনুমতি লাগবে’: জাতিসংঘ
+            </h4>
+            <p class="text-secondary">
+              “আন্তঃসীমান্ত সহায়তা দেওয়ার ক্ষেত্রে সংশ্লিষ্ট সরকারগুলোর অনুমোদন নেওয়ার আইনি বাধ্যবাধকতা জাতিসংঘের রয়েছে।
+              এটা ছাড়া জাতিসংঘের সরাসরি সম্পৃক্ততা সীমিত।”
+            </p>
+          </a>
+          <a class="nav-link mb-5" href="">
+            <h4 class="hover_link">
+              রাখাইনে মানবিক সহায়তা পাঠাতে দুদেশেরই ‘অনুমতি লাগবে’: জাতিসংঘ
+            </h4>
+            <p class="text-secondary">
+              “আন্তঃসীমান্ত সহায়তা দেওয়ার ক্ষেত্রে সংশ্লিষ্ট সরকারগুলোর অনুমোদন নেওয়ার আইনি বাধ্যবাধকতা জাতিসংঘের রয়েছে।
+              এটা ছাড়া জাতিসংঘের সরাসরি সম্পৃক্ততা সীমিত।”
+            </p>
+          </a>
+          <a class="nav-link mb-5" href="">
+            <h4 class="hover_link">
+              রাখাইনে মানবিক সহায়তা পাঠাতে দুদেশেরই ‘অনুমতি লাগবে’: জাতিসংঘ
+            </h4>
+            <p class="text-secondary">
+              “আন্তঃসীমান্ত সহায়তা দেওয়ার ক্ষেত্রে সংশ্লিষ্ট সরকারগুলোর অনুমোদন নেওয়ার আইনি বাধ্যবাধকতা জাতিসংঘের রয়েছে।
+              এটা ছাড়া জাতিসংঘের সরাসরি সম্পৃক্ততা সীমিত।”
+            </p>
+          </a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-12 col-md-6 order-1 order-md-2">
+          <a class="nav-link" href="">
+            <img class="w-100 "
+              src="https://cdn.bdnews24.com/bdnews24/media/bdnews24-english/import/media/2018/12/29/army-patrol-chittagong-291218-3.jpg"
+              alt="image">
+            <h2 class="mt-4 hover_link">আরপিও: আইন শৃঙ্খলাবাহিনীর সংজ্ঞায় সশস্ত্র বাহিনীকে যুক্ত করার প্রস্তাব ইসির</h2>
+            <p class="text-secondary">মন্ত্রিপরিষদ বিভাগ ও সংসদ সচিবালয়ে বুধবার বিকালে ইসির একগুচ্ছ প্রস্তাব পাঠানো
+              হয়েছে।</p>
+          </a>
+        </div>
+
+        <!-- Right Aside -->
+        <div class="col-12 col-md-3 order-3 order-md-3">
+          <a class="nav-link mb-5" href="">
+            <h4 class="hover_link">
+              রাখাইনে মানবিক সহায়তা পাঠাতে দুদেশেরই ‘অনুমতি লাগবে’: জাতিসংঘ
+            </h4>
+            <p class="text-secondary">
+              “আন্তঃসীমান্ত সহায়তা দেওয়ার ক্ষেত্রে সংশ্লিষ্ট সরকারগুলোর অনুমোদন নেওয়ার আইনি বাধ্যবাধকতা জাতিসংঘের রয়েছে।
+              এটা ছাড়া জাতিসংঘের সরাসরি সম্পৃক্ততা সীমিত।”
+            </p>
+          </a>
+          <a class="nav-link mb-5" href="">
+            <h4 class="hover_link">
+              রাখাইনে মানবিক সহায়তা পাঠাতে দুদেশেরই ‘অনুমতি লাগবে’: জাতিসংঘ
+            </h4>
+            <p class="text-secondary">
+              “আন্তঃসীমান্ত সহায়তা দেওয়ার ক্ষেত্রে সংশ্লিষ্ট সরকারগুলোর অনুমোদন নেওয়ার আইনি বাধ্যবাধকতা জাতিসংঘের রয়েছে।
+              এটা ছাড়া জাতিসংঘের সরাসরি সম্পৃক্ততা সীমিত।”
+            </p>
+          </a>
+          <a class="nav-link mb-5" href="">
+            <h4 class="hover_link">
+              রাখাইনে মানবিক সহায়তা পাঠাতে দুদেশেরই ‘অনুমতি লাগবে’: জাতিসংঘ
+            </h4>
+            <p class="text-secondary">
+              “আন্তঃসীমান্ত সহায়তা দেওয়ার ক্ষেত্রে সংশ্লিষ্ট সরকারগুলোর অনুমোদন নেওয়ার আইনি বাধ্যবাধকতা জাতিসংঘের রয়েছে।
+              এটা ছাড়া জাতিসংঘের সরাসরি সম্পৃক্ততা সীমিত।”
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="text-center">
+        <a class="bg-color px-4 py-2 text-white rounded-1 " href="">সব খবর </a>
+      </div>
+    </section>
+    <!-- section 1 end -->
+
+    <!-- section 2 start -->
+    <!-- LeadTop2List -->
+    <section class="section2 container py-5">
+      <div id="LeadTop2List" class="LeadTop2List">
+        <swiper-container class="mySwiper" pagination="true" navigation="true" pagination-clickable="true"
+          space-between="30" slides-per-view="1" breakpoints='{
+            "640": { "slidesPerView": 1 },
+            "768": { "slidesPerView": 3 },
+            "1024": { "slidesPerView": 5 }
+          }'>
+        </swiper-container>
+      </div>
+    </section>
+    <!-- section 2 end -->
+
+    <!-- section 3 start -->
+    <section class="section3 tabs_area py-5">
+      <div class="container mt-4">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="newsTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="popular-tab" data-bs-toggle="tab" data-bs-target="#popular"
+              type="button" role="tab" aria-controls="popular" aria-selected="true">
+              সর্বাধিক পঠিত
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="latest-tab" data-bs-toggle="tab" data-bs-target="#latest" type="button"
+              role="tab" aria-controls="latest" aria-selected="false">
+              সর্বশেষ খবর
+            </button>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content mt-3">
+          <!-- Popular tab -->
+          <div class="tab-pane fade show active" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+            <div class="news-item d-flex">
+              <div class="news-number">১</div>
+              <a class="text-hover" href="">বসুন্ধরা গ্রুপের চেয়ারম্যান ও পরিবারের শেয়ার, ব্যাংক হিসাব অবরুদ্ধের
+                আদেশ</a>
+            </div>
+            <div class="news-item d-flex">
+              <div class="news-number">২</div>
+              <a class="text-hover" href="">বসুন্ধরা গ্রুপের চেয়ারম্যান ও পরিবারের শেয়ার, ব্যাংক হিসাব অবরুদ্ধের
+                আদেশ</a>
+            </div>
+            <div class="news-item d-flex">
+              <div class="news-number">৩</div>
+              <a class="text-hover" href="">বসুন্ধরা গ্রুপের চেয়ারম্যান ও পরিবারের শেয়ার, ব্যাংক হিসাব অবরুদ্ধের
+                আদেশ</a>
+            </div>
+            <div class="news-item d-flex">
+              <div class="news-number">৪</div>
+              <a class="text-hover" href="">বসুন্ধরা গ্রুপের চেয়ারম্যান ও পরিবারের শেয়ার, ব্যাংক হিসাব অবরুদ্ধের
+                আদেশ</a>
+            </div>
+            <div class="news-item d-flex">
+              <div class="news-number">৫</div>
+              <a class="text-hover" href="">বসুন্ধরা গ্রুপের চেয়ারম্যান ও পরিবারের শেয়ার, ব্যাংক হিসাব অবরুদ্ধের
+                আদেশ</a>
+            </div>
+            <div class="news-item d-flex">
+              <div class="news-number">৬</div>
+              <a class="text-hover" href="">বসুন্ধরা গ্রুপের চেয়ারম্যান ও পরিবারের শেয়ার, ব্যাংক হিসাব অবরুদ্ধের
+                আদেশ</a>
+            </div>
+          </div>
+
+          <!-- Latest tab -->
+          <div class="tab-pane fade" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+            <div class="news-item d-flex">
+              <div class="news-number">১</div>
+              <a class="text-hover" href="">বসুন্ধরা গ্রুপের চেয়ারম্যান ও পরিবারের শেয়ার, ব্যাংক হিসাব অবরুদ্ধের
+                আদেশ</a>
+            </div>
+            <div class="news-item d-flex">
+              <div class="news-number">২</div>
+              <a class="text-hover" href="">বসুন্ধরা গ্রুপের চেয়ারম্যান ও পরিবারের শেয়ার, ব্যাংক হিসাব অবরুদ্ধের
+                আদেশ</a>
+            </div>
+            <div class="news-item d-flex">
+              <div class="news-number">৩</div>
+              <a class="text-hover" href="">বসুন্ধরা গ্রুপের চেয়ারম্যান ও পরিবারের শেয়ার, ব্যাংক হিসাব অবরুদ্ধের
+                আদেশ</a>
+            </div>
+            <div class="news-item d-flex">
+              <div class="news-number">৪</div>
+              <a class="text-hover" href="">বসুন্ধরা গ্রুপের চেয়ারম্যান ও পরিবারের শেয়ার, ব্যাংক হিসাব অবরুদ্ধের
+                আদেশ</a>
+            </div>
+            <div class="news-item d-flex">
+              <div class="news-number">৫</div>
+              <a class="text-hover" href="">বসুন্ধরা গ্রুপের চেয়ারম্যান ও পরিবারের শেয়ার, ব্যাংক হিসাব অবরুদ্ধের
+                আদেশ</a>
+            </div>
+            <div class="news-item d-flex">
+              <div class="news-number">৬</div>
+              <a class="text-hover" href="">বসুন্ধরা গ্রুপের চেয়ারম্যান ও পরিবারের শেয়ার, ব্যাংক হিসাব অবরুদ্ধের
+                আদেশ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 3 end -->
+
+    <!-- section 4 start -->
+    <section class="section4 bg-secondary text-white py-5">
+      <div class="tube_area container ">
+        <h5 class=" fw-bold mb-2 section-title">টিউব</h5>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-7 py-3">
+            <div>
+              <a href="">
+                <img class="w-100"
+                  src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/cpb-thumbs-1746109394.jpg"
+                  alt="image">
+                <h2 class="text-hover mt-2">বৈষম্যবিরোধী হয়ে থাকলে শ্রমিকের বেতন বাড়ান: ইউনূসকে সেলিম</h2>
+                <p>গত বছরের গণঅভ্যুত্থানের পর অন্তর্বর্তী সরকার নিজেদের বৈষম্যবিরোধী হিসেবে দাবি করলেও, শ্রমিকদের বেতন
+                  কেন বাড়ছে না। মে
+                  দিবসের সমাবেশে সেই প্রশ্ন তুলেছেন বাংলাদেশের কমিউনিস্ট পার্টি-সিপিবি’র সাবেক সভাপতি মুজাহিদুল ইসলাম
+                  সেলিম।</p>
+              </a>
+            </div>
+          </div>
+          <!-- ---- right side ---- -->
+          <div class="col-12 col-sm-6 col-md-5 ">
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+            <!-- tube right side 2 -->
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+            <!-- tube right side 3 -->
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+            <!-- tube right side 4 -->
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+            <!-- tube right side 5 -->
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 4 end -->
+
+    <!-- section 5 start -->
+    <!-- cricket section -->
+    <section class="section5 cricket_area">
+      <div class="container py-5">
+        <div class="mb-3">
+          <h2 class="section-title">ক্রিকেট</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-sm-7">
+            <a href="">
+              <img class="w-100"
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/shreyas-010525-01-1746102976.jpg"
+                alt="">
+              <h2 class="text-hover mt-2">শ্রেয়াস আইয়ারকে ১২ লাখ রুপি জরিমানা</h2>
+              <p>দলের দশম ম্যাচে এসে আর্থিক জরিমানা গুনতে হচ্ছে পাঞ্জাব কিংসের অধিনায়ককে।</p>
+            </a>
+            <div class="row g-4 mt-4">
+              <div class="col-12 col-sm-6">
+                <a href="" class="row">
+                  <div class="col-4 col-sm-12">
+                    <img class="w-100"
+                      src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/new-zealand-010524-01-1746099678.jpg"
+                      alt="">
+                  </div>
+                  <div class="col-8 col-sm-12">
+                    <h5 class="mt-2 text-hover">টি-টোয়েন্টি বিশ্বকাপের ফাইনাল লর্ডসে</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6">
+                <a href="" class="row">
+                  <div class="col-4 col-sm-12">
+                    <img class="w-100"
+                      src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/new-zealand-010524-01-1746099678.jpg"
+                      alt="">
+                  </div>
+                  <div class="col-8 col-sm-12">
+                    <h5 class="mt-2 text-hover">টি-টোয়েন্টি বিশ্বকাপের ফাইনাল লর্ডসে</h5>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <!-- ---- cricket right side ---- -->
+          <div class="col-12 col-sm-5">
+            <div class="row g-4">
+              <div class="col-12 col-sm-6">
+                <a href="" class="row">
+                  <div class="col-4 col-sm-12">
+                    <img class="w-100"
+                      src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/new-zealand-010524-01-1746099678.jpg"
+                      alt="">
+                  </div>
+                  <div class="col-8 col-sm-12">
+                    <h5 class="mt-2 text-hover">টি-টোয়েন্টি বিশ্বকাপের ফাইনাল লর্ডসে</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6">
+                <a href="" class="row">
+                  <div class="col-4 col-sm-12">
+                    <img class="w-100"
+                      src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/new-zealand-010524-01-1746099678.jpg"
+                      alt="">
+                  </div>
+                  <div class="col-8 col-sm-12">
+                    <h5 class="mt-2 text-hover">টি-টোয়েন্টি বিশ্বকাপের ফাইনাল লর্ডসে</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6">
+                <a href="" class="row">
+                  <div class="col-4 col-sm-12">
+                    <img class="w-100"
+                      src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/new-zealand-010524-01-1746099678.jpg" alt="">
+                  </div>
+                  <div class="col-8 col-sm-12">
+                    <h5 class="mt-2 text-hover">টি-টোয়েন্টি বিশ্বকাপের ফাইনাল লর্ডসে</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6">
+                <a href="" class="row">
+                  <div class="col-4 col-sm-12">
+                    <img class="w-100"
+                      src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/new-zealand-010524-01-1746099678.jpg" alt="">
+                  </div>
+                  <div class="col-8 col-sm-12">
+                    <h5 class="mt-2 text-hover">টি-টোয়েন্টি বিশ্বকাপের ফাইনাল লর্ডসে</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6">
+                <a href="" class="row">
+                  <div class="col-4 col-sm-12">
+                    <img class="w-100"
+                      src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/new-zealand-010524-01-1746099678.jpg" alt="">
+                  </div>
+                  <div class="col-8 col-sm-12">
+                    <h5 class="mt-2 text-hover">টি-টোয়েন্টি বিশ্বকাপের ফাইনাল লর্ডসে</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6">
+                <a href="" class="row">
+                  <div class="col-4 col-sm-12">
+                    <img class="w-100"
+                      src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/new-zealand-010524-01-1746099678.jpg" alt="">
+                  </div>
+                  <div class="col-8 col-sm-12">
+                    <h5 class="mt-2 text-hover">টি-টোয়েন্টি বিশ্বকাপের ফাইনাল লর্ডসে</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- section 5 end -->
+
+    <!-- section 6 start -->
+    <section class="section6 opinion_area py-5" style="background-color: #FCEAEA;">
+      <div class="container py-5">
+        <h2 class="mb-4 section-title">মতামত</h2>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <a href="">
+              <div class="d-flex align-items-center">
+                <img src="https://cdn.bdnews24.com/bdnews24/media/bangla/writer/toriqul-islam-1723178719.jpg"
+                  alt="এস. টি. ইসলাম" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h6 class="mb-1 text-danger fw-bold">এস. টি. ইসলাম</h6>
+                  <p class="mb-0 small">ভারত ও পাকিস্তানের অসংখ্যর্মান দলের মধ্যে বাংলাদেশের যে কৌশল কাজ্য</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <a href="">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://cdn.bdnews24.com/bdnews24/media/bdnews24/2022-07/795e0b03-7846-4c9b-b5cb-3a55e2737168/bibhuranjansarker.jfif"
+                  alt="বিপুলজন সরকার" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h6 class="mb-1 text-danger fw-bold">বিপুলজন সরকার</h6>
+                  <p class="mb-0 small">শোষণহীন সমাজের স্বপ্ন, সংগ্রাম ও অগ্রগা সাক্ষ্যতা</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <a href="">
+              <div class="d-flex align-items-center">
+                <img src="https://cdn.bdnews24.com/bdnews24/media/bangla/writer/-1737634601.jpg" alt="নাহিদ হোসেন"
+                  class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h6 class="mb-1 text-danger fw-bold">নাহিদ হোসেন</h6>
+                  <p class="mb-0 small">মিয়ানমারের জাতিস সরকারকে অন্ধকারে রেখে মানবিক করিডোর কি সম্ভব?</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <a href="">
+              <div class="d-flex align-items-center">
+                <img src="https://cdn.bdnews24.com/bdnews24/media/bangla/writer/dsc09389-1-1740567960.jpg" alt="মীর রবি"
+                  class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h6 class="mb-1 text-danger fw-bold">মীর রবি</h6>
+                  <p class="mb-0 small">পাঠাগারে পোড়ানো অসম্পরের বর্ণান</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 6 end -->
+
+    <!-- section 7 start -->
+    <section class="section7 TradeEconCapitalMarkets py-5">
+      <div class="container text-danger">
+        <div class="py-5">
+          <div class="mt-4">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="newsTab2" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="popular2-tab" data-bs-toggle="tab" data-bs-target="#popular2"
+                  type="button" role="tab" aria-controls="popular2" aria-selected="true">
+                  সর্বাধিক পঠিত
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="latest2-tab" data-bs-toggle="tab" data-bs-target="#latest2" type="button"
+                  role="tab" aria-controls="latest2" aria-selected="false">
+                  চট্টগ্রাম
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content mt-3">
+              <!-- Popular tab -->
+              <div class="tab-pane fade show active" id="popular2" role="tabpanel" aria-labelledby="popular2-tab">
+                <div class="row">
+                  <div class="col-12 col-md-5">
+                    <div>
+                      <a class="text-dark" href="">
+                        <img class="w-100"
+                          src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jhenidah-injured-020525-1746182151.jpg"
+                          alt="">
+                        <h5 class="text-hover mt-2">ঝিনাইদহে বিএসএফের গুলিতে বাংলাদেশি আহত হওয়ার খবর</h5>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7 text-dark">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Latest tab -->
+              <div class="tab-pane fade" id="latest2" role="tabpanel" aria-labelledby="latest2-tab">
+                <div class="row">
+                  <div class="col-12 col-md-5">
+                    <div>
+                      <a class="text-dark" href="">
+                        <img class="w-100"
+                          src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jhenidah-injured-020525-1746182151.jpg"
+                          alt="">
+                        <h5 class="text-hover mt-2">ঝিনাইদহে বিএসএফের গুলিতে বাংলাদেশি আহত হওয়ার খবর</h5>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7 text-dark">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                        <a href="" class="row mb-2">
+                          <div class="col-8">
+                            <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                          </div>
+                          <div class="col-4">
+                            <img class="w-100"
+                              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                              alt="">
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn bg-color px-5 py-2">
+            আরও
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- section 7 end -->
+
+
+    <!-- section 8 start -->
+    <section class="section8 world_area py-5">
+      <div class="container ">
+        <h2 class="section-title fw-bold mb-2">বিশ্ব</h2>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-7 py-3">
+            <div>
+              <a href="">
+                <img class="w-100"
+                  src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/india-pakistan-tension-dal-lake-kashmir-300425-1745992255.jpg"
+                  alt="image">
+                <h2 class="text-hover mt-2">কাশ্মীর হামলা: কেমন হতে পারে ভারতের জবাব, ইতিহাস কী বলে?</h2>
+                <p>বিমান হামলা থেকে গোপন অভিযান- অতীতে নানা উপায়ে পাকিস্তানকে আঘাত করেছে ভারত। এবার কী করবে?
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- ---- right side ---- -->
+          <div class="col-12 col-sm-6 col-md-5 ">
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্সরে দাঁড়াচ্ছেন মার্কিন জাতীয় নিরাপত্তা উপদেষ্টা মাইক ওয়াল্টজ</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/waltz-010525-01-1746114877.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+            <!-- tube right side 2 -->
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+            <!-- tube right side 3 -->
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+            <!-- tube right side 4 -->
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+            <!-- tube right side 5 -->
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 8 end -->
+
+    <!-- section 9 start -->
+    <section class="section9 py-5">
+      <div class="container">
+        <div class="mb-3">
+          <h2 class="section-title">টেক</h2>
+        </div>
+        <swiper-container class="mySwiper" pagination="true" navigation="true" pagination-clickable="true"
+          space-between="30" slides-per-view="1" breakpoints='{
+              "640": { "slidesPerView": 1 },
+              "768": { "slidesPerView": 3 },
+              "1024": { "slidesPerView": 5 }
+            }'>
+
+          <swiper-slide>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/apple-reuters-020525-01-1746197408.jpg"
+                class="w-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">অ্যাপল ইচ্ছাকৃতভাবে আদালতের আদেশ লঙ্ঘন করেছে: রায়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/apple-reuters-020525-01-1746197408.jpg"
+                class="w-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">অ্যাপল ইচ্ছাকৃতভাবে আদালতের আদেশ লঙ্ঘন করেছে: রায়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/apple-reuters-020525-01-1746197408.jpg"
+                class="w-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">অ্যাপল ইচ্ছাকৃতভাবে আদালতের আদেশ লঙ্ঘন করেছে: রায়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/apple-reuters-020525-01-1746197408.jpg"
+                class="w-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">অ্যাপল ইচ্ছাকৃতভাবে আদালতের আদেশ লঙ্ঘন করেছে: রায়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/apple-reuters-020525-01-1746197408.jpg"
+                class="w-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">অ্যাপল ইচ্ছাকৃতভাবে আদালতের আদেশ লঙ্ঘন করেছে: রায়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/apple-reuters-020525-01-1746197408.jpg"
+                class="w-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">অ্যাপল ইচ্ছাকৃতভাবে আদালতের আদেশ লঙ্ঘন করেছে: রায়</h5>
+            </a>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </section>
+    <!-- section 9 end -->
+
+
+    <!-- section 10 start -->
+    <section class="section10 py-5">
+      <div class="container">
+        <div class="mb-3">
+          <h2 class="section-title">গ্লিটজ</h2>
+        </div>
+        <swiper-container class="mySwiper" pagination="true" navigation="true" pagination-clickable="true"
+          space-between="30" slides-per-view="1" breakpoints='{
+                                "640": { "slidesPerView": 1 },
+                                "768": { "slidesPerView": 3 },
+                                "1024": { "slidesPerView": 5 }
+                              }'>
+
+          <swiper-slide class="glitz_div">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/zefer-rahman-020525-01-1746168540.jpg"
+                class="w-100 h-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">অ্যাপল ইচ্ছাকৃতভাবে আদালতের আদেশ লঙ্ঘন করেছে: রায়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide class="glitz_div">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/zefer-rahman-020525-01-1746168540.jpg"
+                class="w-100 h-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">অ্যাপল ইচ্ছাকৃতভাবে আদালতের আদেশ লঙ্ঘন করেছে: রায়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide class="glitz_div">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/zefer-rahman-020525-01-1746168540.jpg"
+                class="w-100 h-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">অ্যাপল ইচ্ছাকৃতভাবে আদালতের আদেশ লঙ্ঘন করেছে: রায়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide class="glitz_div">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/zefer-rahman-020525-01-1746168540.jpg"
+                class="w-100 h-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">অ্যাপল ইচ্ছাকৃতভাবে আদালতের আদেশ লঙ্ঘন করেছে: রায়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide class="glitz_div">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/zefer-rahman-020525-01-1746168540.jpg"
+                class="w-100 h-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">অ্যাপল ইচ্ছাকৃতভাবে আদালতের আদেশ লঙ্ঘন করেছে: রায়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide class="glitz_div">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/zefer-rahman-020525-01-1746168540.jpg"
+                class="w-100 h-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">অ্যাপল ইচ্ছাকৃতভাবে আদালতের আদেশ লঙ্ঘন করেছে: রায়</h5>
+            </a>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </section>
+    <!-- section 10 end -->
+
+    <!-- section 11 start -->
+    <section class="section11 py-5">
+      <div class="container">
+        <div class="mb-3">
+          <h2 class="section-title">লাইফস্টাইল</h2>
+        </div>
+        <swiper-container class="mySwiper" pagination="true" navigation="true" pagination-clickable="true"
+          space-between="30" slides-per-view="1" breakpoints='{
+                    "640": { "slidesPerView": 1 },
+                    "768": { "slidesPerView": 3 },
+                    "1024": { "slidesPerView": 5 }
+                  }'>
+
+          <swiper-slide>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/sleep-awake-300425-1746017243.jpg"
+                class="w-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">ঘুম থেকে জেগে ওঠার সেরা সময়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/sleep-awake-300425-1746017243.jpg"
+                class="w-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">ঘুম থেকে জেগে ওঠার সেরা সময়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/sleep-awake-300425-1746017243.jpg"
+                class="w-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">ঘুম থেকে জেগে ওঠার সেরা সময়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/sleep-awake-300425-1746017243.jpg"
+                class="w-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">ঘুম থেকে জেগে ওঠার সেরা সময়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/sleep-awake-300425-1746017243.jpg"
+                class="w-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">ঘুম থেকে জেগে ওঠার সেরা সময়</h5>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/sleep-awake-300425-1746017243.jpg"
+                class="w-100" alt="Dummy Image 1">
+              <h5 class="mt-2 text-hover">ঘুম থেকে জেগে ওঠার সেরা সময়</h5>
+            </a>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </section>
+    <!-- section 11 end -->
+
+    <!-- section 12 start -->
+    <section class="section12 py-5">
+      <div class="container ">
+        <div class="mb-3">
+          <h2 class="section-title">খেলা</h2>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-7 py-3">
+            <div>
+              <a href="">
+                <img class="w-100"
+                  src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/xabi-alonso-020525-01-1746202664.jpg"
+                  alt="image">
+                <h2 class="text-hover mt-2">রেয়াল মাদ্রিদের কোচ হওয়ার গুঞ্জনের মাঝে ভবিষ‍্যৎ নিয়ে ‘চুপ’ আলোন্সো</h2>
+                <p>স্প‍্যানিশ গণমাধ‍্যমের খবর অনুযায়ী, রেয়াল মাদ্রিদের কোচ হওয়ার দৌড়ে সবার চেয়ে এগিয়ে শাবি আলোন্সো।
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- ---- right side ---- -->
+          <div class="col-12 col-sm-6 col-md-5 ">
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্সরে দাঁড়াচ্ছেন মার্কিন জাতীয় নিরাপত্তা উপদেষ্টা মাইক ওয়াল্টজ</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/waltz-010525-01-1746114877.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+            <!-- tube right side 2 -->
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+            <!-- tube right side 3 -->
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+            <!-- tube right side 4 -->
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+            <!-- tube right side 5 -->
+            <a href="">
+              <div class="row mb-3 pb-3 border-bottom" style="border-bottom: 2px solid #6c757d;">
+                <div class="col-8 d-flex align-items-center">
+                  <h5 class="mb-0 text-hover">শ্রমিকদের আগের অবস্থায় রেখে নতুন বাংলাদেশ সম্ভব নয়: ইউনূস</h5>
+                </div>
+                <div class="col-4">
+                  <img class="img-fluid rounded"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/bnp-somabesh-thumbnail-01052025-1746103276.jpg"
+                    alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 12 end -->
+
+    <!-- section 13 start -->
+    <section class="section13 py-5" style="background-color: #E8FBE7;">
+      <div class="container py-5">
+        <div class="mb-3">
+          <h2 class="section-title">আর্টস</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <a href="">
+              <div class="d-flex align-items-center">
+                <img src="https://cdn.bdnews24.com/bdnews24/media/bangla/writer/toriqul-islam-1723178719.jpg"
+                  alt="এস. টি. ইসলাম" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h6 class="mb-1 text-danger fw-bold">এস. টি. ইসলাম</h6>
+                  <p class="mb-0 small">ভারত ও পাকিস্তানের অসংখ্যর্মান দলের মধ্যে বাংলাদেশের যে কৌশল কাজ্য</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <a href="">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://cdn.bdnews24.com/bdnews24/media/bdnews24/2022-07/795e0b03-7846-4c9b-b5cb-3a55e2737168/bibhuranjansarker.jfif"
+                  alt="বিপুলজন সরকার" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h6 class="mb-1 text-danger fw-bold">বিপুলজন সরকার</h6>
+                  <p class="mb-0 small">শোষণহীন সমাজের স্বপ্ন, সংগ্রাম ও অগ্রগা সাক্ষ্যতা</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <a href="">
+              <div class="d-flex align-items-center">
+                <img src="https://cdn.bdnews24.com/bdnews24/media/bangla/writer/-1737634601.jpg" alt="নাহিদ হোসেন"
+                  class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h6 class="mb-1 text-danger fw-bold">নাহিদ হোসেন</h6>
+                  <p class="mb-0 small">মিয়ানমারের জাতিস সরকারকে অন্ধকারে রেখে মানবিক করিডোর কি সম্ভব?</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <a href="">
+              <div class="d-flex align-items-center">
+                <img src="https://cdn.bdnews24.com/bdnews24/media/bangla/writer/dsc09389-1-1740567960.jpg" alt="মীর রবি"
+                  class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h6 class="mb-1 text-danger fw-bold">মীর রবি</h6>
+                  <p class="mb-0 small">পাঠাগারে পোড়ানো অসম্পরের বর্ণান</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 13 end -->
+
+
+    <!-- section 14  start-->
+    <section class="section14 py-5">
+      <div class="container">
+        <div class="mb-3">
+          <h2 class="section-title">ছবিঘর</h2>
+
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <swiper-container class="mySwiper" pagination="true" navigation="true" pagination-clickable="true"
+              space-between="30" slides-per-view="1">
+              <swiper-slide>
+                <a class="text-dark" href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jhenidah-injured-020525-1746182151.jpg"
+                    alt="">
+                  <h5 class="text-hover mt-2">ঝিনাইদহে বিএসএফের গুলিতে বাংলাদেশি আহত হওয়ার খবর</h5>
+                </a>
+              </swiper-slide>
+              <swiper-slide>
+                <a class="text-dark" href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jhenidah-injured-020525-1746182151.jpg"
+                    alt="">
+                  <h5 class="text-hover mt-2">ঝিনাইদহে বিএসএফের গুলিতে বাংলাদেশি আহত হওয়ার খবর</h5>
+                </a>
+              </swiper-slide>
+              <swiper-slide>
+                <a class="text-dark" href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jhenidah-injured-020525-1746182151.jpg"
+                    alt="">
+                  <h5 class="text-hover mt-2">ঝিনাইদহে বিএসএফের গুলিতে বাংলাদেশি আহত হওয়ার খবর</h5>
+                </a>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+          <!-- right side  -->
+          <div class="col-12 col-md-6 text-dark">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <a href="" class="row mb-2">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                    alt="">
+                  <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                </a>
+                <a href="" class="row mb-2">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                    alt="">
+                  <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                </a>
+              </div>
+              <div class="col-12 col-md-6">
+                <a href="" class="row mb-2">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                    alt="">
+                  <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                </a>
+                <a href="" class="row mb-2">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/jamalpur-odo-020525-01-1746202955.jpg"
+                    alt="">
+                  <h5 class="text-hover">জামালপুরে মামলা না নেওয়ার জেরে পিপি-ওসি বচসার অডিও ফেইসবুকে</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- secton 14 end -->
+
+
+    <!-- section 15 start -->
+    <section class="section15 py-5">
+      <div class="container">
+        <div class="mb-3">
+          <h2 class="section-title">কিডজ</h2>
+        </div>
+        <a href="" class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <img class="w-100"
+              src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/kidz-010525-01-1746084966.jpg" alt="">
+          </div>
+          <div class="col-12 col-md-6 ">
+            <h2 class="text-hover">গহনবনের নায়কেরা, পর্ব ১১</h2>
+          </div>
+        </a>
+        <div class="row my-4">
+          <div class="col-12 col-sm-6 col-md-3">
+            <a href="">
+              <img class="w-100"
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/kidz-290425-01-1745864754.jpg"
+                alt="">
+              <h5 class="mt-3 text-hover">
+                ইয়াসুনারি কাওয়াবাতার গল্প: ঘাসফড়িং ও ঝিঁঝিঁ পোকা
+              </h5>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <a href="">
+              <img class="w-100"
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/kidz-290425-01-1745864754.jpg"
+                alt="">
+              <h5 class="mt-3 text-hover">
+                ইয়াসুনারি কাওয়াবাতার গল্প: ঘাসফড়িং ও ঝিঁঝিঁ পোকা
+              </h5>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <a href="">
+              <img class="w-100"
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/kidz-290425-01-1745864754.jpg"
+                alt="">
+              <h5 class="mt-3 text-hover">
+                ইয়াসুনারি কাওয়াবাতার গল্প: ঘাসফড়িং ও ঝিঁঝিঁ পোকা
+              </h5>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <a href="">
+              <img class="w-100"
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/kidz-290425-01-1745864754.jpg"
+                alt="">
+              <h5 class="mt-3 text-hover">
+                ইয়াসুনারি কাওয়াবাতার গল্প: ঘাসফড়িং ও ঝিঁঝিঁ পোকা
+              </h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 15 end -->
+
+    <!-- section 16 start-->
+    <section class="section16 py-5">
+      <div class="container">
+        <div class="mb-3">
+          <h2 class="section-title">হ্যালো</h2>
+        </div>
+        <div>
+          <div id="LeadTop2List" class="LeadTop2List">
+            <swiper-container class="mySwiper" pagination="true" navigation="true" pagination-clickable="true"
+              space-between="30" slides-per-view="1" breakpoints='{
+                          "640": { "slidesPerView": 1 },
+                          "768": { "slidesPerView": 3 },
+                          "1024": { "slidesPerView": 4 }
+                        }'>
+              <swiper-slide>
+                <a href="">
+                  <img
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/hiya-with-dance-trainer-29042025-02-1745940829.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">ম্যাম আমার নাচের প্রেরণা</h5>
+                </a>
+              </swiper-slide>
+              <swiper-slide>
+                <a href="">
+                  <img
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/hiya-with-dance-trainer-29042025-02-1745940829.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">ম্যাম আমার নাচের প্রেরণা</h5>
+                </a>
+              </swiper-slide>
+              <swiper-slide>
+                <a href="">
+                  <img
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/hiya-with-dance-trainer-29042025-02-1745940829.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">ম্যাম আমার নাচের প্রেরণা</h5>
+                </a>
+              </swiper-slide>
+              <swiper-slide>
+                <a href="">
+                  <img
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/hiya-with-dance-trainer-29042025-02-1745940829.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">ম্যাম আমার নাচের প্রেরণা</h5>
+                </a>
+              </swiper-slide>
+              <swiper-slide>
+                <a href="">
+                  <img
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/hiya-with-dance-trainer-29042025-02-1745940829.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">ম্যাম আমার নাচের প্রেরণা</h5>
+                </a>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- section 16 end -->
+
+
+    <!-- section 17 start -->
+    <section class="section17 py-5">
+      <div class="container py-5">
+        <ul class="nav nav-tabs" id="newsTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="banijya-tab" data-bs-toggle="tab" data-bs-target="#banijya"
+              type="button" role="tab">বাণিজ্য</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="orthoniti-tab" data-bs-toggle="tab" data-bs-target="#orthoniti" type="button"
+              role="tab">অর্থনীতি</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pujibazar-tab" data-bs-toggle="tab" data-bs-target="#pujibazar" type="button"
+              role="tab">পুঁজিবাজার</button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="newsTabContent">
+          <!-- বাণিজ্য Tab -->
+          <div class="tab-pane fade show active" id="banijya" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-3 news-card">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/sat-tala-bazar-020525-01-1746207830.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">দাম বেড়েছে মুরগির, চড়ই আছে সবজির বাজার</h5>
+                </a>
+              </div>
+              <div class="col-md-3 news-card">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/sat-tala-bazar-020525-01-1746207830.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">দাম বেড়েছে মুরগির, চড়ই আছে সবজির বাজার</h5>
+                </a>
+              </div>
+              <div class="col-md-3 news-card">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/sat-tala-bazar-020525-01-1746207830.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">দাম বেড়েছে মুরগির, চড়ই আছে সবজির বাজার</h5>
+                </a>
+              </div>
+              <div class="col-md-3 news-card">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/sat-tala-bazar-020525-01-1746207830.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">দাম বেড়েছে মুরগির, চড়ই আছে সবজির বাজার</h5>
+                </a>
+              </div>
+              <div class="col-md-3 news-card">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/sat-tala-bazar-020525-01-1746207830.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">দাম বেড়েছে মুরগির, চড়ই আছে সবজির বাজার</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- অর্থনীতি Tab -->
+          <div class="tab-pane fade" id="orthoniti" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-3 news-card">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/sat-tala-bazar-020525-01-1746207830.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">দাম বেড়েছে মুরগির, চড়ই আছে সবজির বাজার</h5>
+                </a>
+              </div>
+              <div class="col-md-3 news-card">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/sat-tala-bazar-020525-01-1746207830.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">দাম বেড়েছে মুরগির, চড়ই আছে সবজির বাজার</h5>
+                </a>
+              </div>
+              <div class="col-md-3 news-card">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/sat-tala-bazar-020525-01-1746207830.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">দাম বেড়েছে মুরগির, চড়ই আছে সবজির বাজার</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- পুঁজিবাজার Tab -->
+          <div class="tab-pane fade" id="pujibazar" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-3 news-card">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/sat-tala-bazar-020525-01-1746207830.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">দাম বেড়েছে মুরগির, চড়ই আছে সবজির বাজার</h5>
+                </a>
+              </div>
+              <div class="col-md-3 news-card">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/sat-tala-bazar-020525-01-1746207830.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">দাম বেড়েছে মুরগির, চড়ই আছে সবজির বাজার</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn bg-color px-5 py-2">
+            আরও
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- section 17 end -->
+
+
+    <!-- section 18 start  -->
+    <section class="section18 py-5">
+      <div class="container">
+        <div class="mb-3">
+          <h2 class="section-title">ছবির গল্প</h2>
+        </div>
+        <div class="">
+          <div id="LeadTop2List" class="LeadTop2List">
+            <swiper-container class="mySwiper" pagination="true" navigation="true" pagination-clickable="true"
+              space-between="30" slides-per-view="1" breakpoints='{
+                                                    "640": { "slidesPerView": 1 },
+                                                    "768": { "slidesPerView": 3 },
+                                                    "1024": { "slidesPerView": 4 }
+                                                  }'>
+              <swiper-slide>
+                <a href="">
+                  <img
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025March/SM/eid-ul-fitr-albania-300325-02-1743325467.jpg"
+                    alt="">
+                  <p class="fs-6 fw-normal section-title">ছবির গল্প</p>
+                  <h5 class="mt-3 text-hover">ম্যাম আমার নাচের প্রেরণা</h5>
+                </a>
+              </swiper-slide>
+              <swiper-slide>
+                <a href="">
+                  <img
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025March/SM/eid-ul-fitr-albania-300325-02-1743325467.jpg"
+                    alt="">
+                  <p class="fs-6 fw-normal section-title">ছবির গল্প</p>
+                  <h5 class="mt-3 text-hover">ম্যাম আমার নাচের প্রেরণা</h5>
+                </a>
+              </swiper-slide>
+              <swiper-slide>
+                <a href="">
+                  <img
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025March/SM/eid-ul-fitr-albania-300325-02-1743325467.jpg"
+                    alt="">
+                  <p class="fs-6 fw-normal section-title">ছবির গল্প</p>
+                  <h5 class="mt-3 text-hover">ম্যাম আমার নাচের প্রেরণা</h5>
+                </a>
+              </swiper-slide>
+              <swiper-slide>
+                <a href="">
+                  <img
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025March/SM/eid-ul-fitr-albania-300325-02-1743325467.jpg"
+                    alt="">
+                  <p class="fs-6 fw-normal section-title">ছবির গল্প</p>
+                  <h5 class="mt-3 text-hover">ম্যাম আমার নাচের প্রেরণা</h5>
+                </a>
+              </swiper-slide>
+              <swiper-slide>
+                <a href="">
+                  <img
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025March/SM/eid-ul-fitr-albania-300325-02-1743325467.jpg"
+                    alt="">
+                  <p class="fs-6 fw-normal section-title">ছবির গল্প</p>
+                  <h5 class="mt-3 text-hover">ম্যাম আমার নাচের প্রেরণা</h5>
+                </a>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 18 end -->
+
+
+    <!-- section 19 start -->
+    <section class="section19 py-5">
+      <div class="container">
+        <div class="mb-3">
+          <h2 class="sectioon-title"></h2>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+           <div>
+            <h2 class="section-title">
+              রাজনীতি
+            </h2>
+           </div>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/nahid-islam-020525-001-1746195728.jpg"
+                alt="">
+              <h5 class="mt-3 text-hover">আওয়ামী লীগের বিচার নিয়ে ইউনূস সরকারকে এনসিপির হুঁশিয়ারি </h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">জোবাইদার ৪ ধরনের নিরাপত্তা চেয়ে আইজিপিকে চিঠি</h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">এমন আবহাওয়া তৈরি করছে, যেন ভোট চাওয়াই অপরাধ: তারেক</h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">৫ মে ফিরছেন খালেদা জিয়া</h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">নির্বাচন ছাড়া কাউকে বৈধতা দেবে না জনগণ: খসরু</h5>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <h2 class="section-title">
+                প্রবাস
+              </h2>
+            </div>
+            
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/nahid-islam-020525-001-1746195728.jpg"
+                alt="">
+              <h5 class="mt-3 text-hover">আওয়ামী লীগের বিচার নিয়ে ইউনূস সরকারকে এনসিপির হুঁশিয়ারি </h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">জোবাইদার ৪ ধরনের নিরাপত্তা চেয়ে আইজিপিকে চিঠি</h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">এমন আবহাওয়া তৈরি করছে, যেন ভোট চাওয়াই অপরাধ: তারেক</h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">৫ মে ফিরছেন খালেদা জিয়া</h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">নির্বাচন ছাড়া কাউকে বৈধতা দেবে না জনগণ: খসরু</h5>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <h2 class="section-title">
+                বিজ্ঞান
+              </h2>
+            </div>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/nahid-islam-020525-001-1746195728.jpg"
+                alt="">
+              <h5 class="mt-3 text-hover">আওয়ামী লীগের বিচার নিয়ে ইউনূস সরকারকে এনসিপির হুঁশিয়ারি </h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">জোবাইদার ৪ ধরনের নিরাপত্তা চেয়ে আইজিপিকে চিঠি</h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">এমন আবহাওয়া তৈরি করছে, যেন ভোট চাওয়াই অপরাধ: তারেক</h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">৫ মে ফিরছেন খালেদা জিয়া</h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">নির্বাচন ছাড়া কাউকে বৈধতা দেবে না জনগণ: খসরু</h5>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <h2 class="section-title">
+                ক্যাম্পাস
+              </h2>
+            </div>
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/nahid-islam-020525-001-1746195728.jpg"
+                alt="">
+              <h5 class="mt-3 text-hover">আওয়ামী লীগের বিচার নিয়ে ইউনূস সরকারকে এনসিপির হুঁশিয়ারি </h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">জোবাইদার ৪ ধরনের নিরাপত্তা চেয়ে আইজিপিকে চিঠি</h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">এমন আবহাওয়া তৈরি করছে, যেন ভোট চাওয়াই অপরাধ: তারেক</h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">৫ মে ফিরছেন খালেদা জিয়া</h5>
+            </a>
+            <a href="">
+              <h5 class="text-hover mt-3">নির্বাচন ছাড়া কাউকে বৈধতা দেবে না জনগণ: খসরু</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 19 end -->
+
+    <!-- section 20 start -->
+    <section class="section20 py-5" style="background-color: #E8FBE7;">
+      <div class="container">
+        <div class="mb-3">
+          <h2 class="section-title">ইনসাইড আউট</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-8 mb-5 mb-md-0">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/k1cQ6QkRV88" title="YouTube video" allowfullscreen></iframe>
+            </div>
+
+
+          </div>
+          <!-- right side  -->
+          <div class="col-md-4">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/julian-francis-thumb-english-1745897462.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">
+                    জুলিয়ান ফ্রান্সিসের ৮০: ‘আমি এখন বাংলাদেশি, আমি এখানেই থাকব’
+                  </h5>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/thumb-bangla-1745847215.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">
+                    অন্তর্বর্তী সরকারের পক্ষে সবকিছুর সমাধান সম্ভব না; নির্বাচনই উত্তরণের পথ: ফখরুল
+                  </h5>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/thumb-bangla-1745847215.jpg"
+                    alt="">
+                  <h5 class="mt-3 text-hover">
+                    অন্তর্বর্তী সরকারের পক্ষে সবকিছুর সমাধান সম্ভব না; নির্বাচনই উত্তরণের পথ: ফখরুল
+                  </h5>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="">
+                  <img class="w-100"
+                    src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025April/SM/thumb-bangla-1745847215.jpg" alt="">
+                  <h5 class="mt-3 text-hover">
+                    অন্তর্বর্তী সরকারের পক্ষে সবকিছুর সমাধান সম্ভব না; নির্বাচনই উত্তরণের পথ: ফখরুল
+                  </h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 20 end -->
+
+
+    <!-- section 21 start -->
+    <section class="section21 py-5">
+      <div class="container">
+        <div class="mb-3">
+          <h2 class="section-title">
+            সবিশেষ
+          </h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/habiganj-sutang-river-110425-01-1746127752.jpg"
+                alt="" class="w-100">
+              <p class="section-title fs-6 fw-normal m-0 p-0">সমগ্র বাংলাদেশ</p>
+              <h5 class="text-hover mt-2">
+                সুতাং নদী: শিল্পের ‘বর্জ্যে’ কৃষির সর্বনাশ
+              </h5>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/habiganj-sutang-river-110425-01-1746127752.jpg"
+                alt="" class="w-100">
+              <p class="section-title fs-6 fw-normal m-0 p-0">সমগ্র বাংলাদেশ</p>
+              <h5 class="text-hover mt-2">
+                সুতাং নদী: শিল্পের ‘বর্জ্যে’ কৃষির সর্বনাশ
+              </h5>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/habiganj-sutang-river-110425-01-1746127752.jpg"
+                alt="" class="w-100">
+              <p class="section-title fs-6 fw-normal m-0 p-0">সমগ্র বাংলাদেশ</p>
+              <h5 class="text-hover mt-2">
+                সুতাং নদী: শিল্পের ‘বর্জ্যে’ কৃষির সর্বনাশ
+              </h5>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/habiganj-sutang-river-110425-01-1746127752.jpg"
+                alt="" class="w-100">
+              <p class="section-title fs-6 fw-normal m-0 p-0">সমগ্র বাংলাদেশ</p>
+              <h5 class="text-hover mt-2">
+                সুতাং নদী: শিল্পের ‘বর্জ্যে’ কৃষির সর্বনাশ
+              </h5>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/habiganj-sutang-river-110425-01-1746127752.jpg"
+                alt="" class="w-100">
+              <p class="section-title fs-6 fw-normal m-0 p-0">সমগ্র বাংলাদেশ</p>
+              <h5 class="text-hover mt-2">
+                সুতাং নদী: শিল্পের ‘বর্জ্যে’ কৃষির সর্বনাশ
+              </h5>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/habiganj-sutang-river-110425-01-1746127752.jpg"
+                alt="" class="w-100">
+              <p class="section-title fs-6 fw-normal m-0 p-0">সমগ্র বাংলাদেশ</p>
+              <h5 class="text-hover mt-2">
+                সুতাং নদী: শিল্পের ‘বর্জ্যে’ কৃষির সর্বনাশ
+              </h5>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/habiganj-sutang-river-110425-01-1746127752.jpg"
+                alt="" class="w-100">
+              <p class="section-title fs-6 fw-normal m-0 p-0">সমগ্র বাংলাদেশ</p>
+              <h5 class="text-hover mt-2">
+                সুতাং নদী: শিল্পের ‘বর্জ্যে’ কৃষির সর্বনাশ
+              </h5>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img
+                src="https://cdn.bdnews24.com/bdnews24/media/bangla/imgAll/2025May/SM/habiganj-sutang-river-110425-01-1746127752.jpg"
+                alt="" class="w-100">
+              <p class="section-title fs-6 fw-normal m-0 p-0">সমগ্র বাংলাদেশ</p>
+              <h5 class="text-hover mt-2">
+                সুতাং নদী: শিল্পের ‘বর্জ্যে’ কৃষির সর্বনাশ
+              </h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 21 start -->
+
+
+
+  </main>
+
+
+  <!-- ----footer section ---- -->
+  <footer class="bg-color text-white pt-5 ">
+    <div class="container text-center mb-4">
+      <h2 class="text-danger fw-bold">bdnews24.com</h2>
+      <p class="text-muted small">প্রধান সম্পাদক ও প্রকাশক: তৌফিক ইমরোজ খালিদী</p>
+    </div>
+
+    <div class="container border-top border-bottom py-4">
+      <div class="row text-start">
+        <div class="col-6 col-md-2 mb-3">
+          <h6 class="fw-bold">খবর</h6>
+          <ul class="list-unstyled small">
+            <li>বাংলাদেশ</li>
+            <li>সর্বশেষ বাংলাদেশ</li>
+            <li>বিশ্ব</li>
+            <li>রাজনীতি</li>
+            <li>অর্থ ও বাণিজ্য</li>
+            <li>অপরাধ</li>
+            <li>বিনোদন</li>
+            <li>প্রবাস</li>
+            <li>পরিবেশ</li>
+            <li>বিজ্ঞান</li>
+            <li>স্বাস্থ্য</li>
+            <li>ফিচার</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-3">
+          <h6 class="fw-bold">ফিচার</h6>
+          <ul class="list-unstyled small">
+            <li>লাইফস্টাইল</li>
+            <li>ট্রাভেল</li>
+            <li>টেক</li>
+            <li>আর্টস</li>
+            <li>শিক্ষা</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-3">
+          <h6 class="fw-bold">অন্যন্য</h6>
+          <ul class="list-unstyled small">
+            <li>হ্যালো</li>
+            <li>ভিডিও</li>
+            <li>ছবিঘর</li>
+            <li>ছবি গল্প</li>
+            <li>সার্বিক</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-3">
+          <h6 class="fw-bold">খেলা</h6>
+          <ul class="list-unstyled small">
+            <li>খেলা</li>
+            <li>ক্রিকেট</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-3">
+          <h6 class="fw-bold">মতামত</h6>
+          <ul class="list-unstyled small">
+            <li>মতামত</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4 text-center">
+      <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+        <span>Follow us</span>
+        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <div class="mb-3">
+        <a href="#" class="text-white small me-2">Disclaimer & Privacy Policy</a> |
+        <a href="#" class="text-white small mx-2">About Us</a> |
+        <a href="#" class="text-white small ms-2">Contact Us</a>
+      </div>
+      <div class="mb-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Available_on_the_App_Store_(black)_SVG.svg"
+          alt="App Store" height="32" class="me-2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"
+          height="32">
+      </div>
+      <div class="small text-muted">Copyright © 2025, bdnews24</div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <!-- common js -->
+  <script src="./assets/js/LeadTop2List.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      const menu = document.getElementById('mainMenu');
+      if (window.scrollY > 0) {
+        menu.classList.add('fixed-top');
+        menu.classList.add('shadow');
+      } else {
+        menu.classList.remove('fixed-top');
+        menu.classList.remove('shadow');
+      }
+    });
+    const dropdownBtn = document.getElementById('dropdownBtn');
+      const dropdown = document.getElementById('dropdown');
+
+      // Optional: Ensure it's hidden by default
+      dropdown.style.display = 'none';
+
+      dropdownBtn.addEventListener('click', () => {
+        if (dropdown.style.display === 'none') {
+          dropdown.style.display = 'block';
+        } else {
+          dropdown.style.display = 'none';
+        }
+      });
+  </script>
+
+</body>
+
+</html>
